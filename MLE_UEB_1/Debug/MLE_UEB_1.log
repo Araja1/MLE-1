@@ -1,0 +1,9 @@
+﻿  Quelle.cpp
+  Climber.cpp
+c:\users\philips\desktop\mle-1\mle_ueb_1\climber.cpp(29): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\philips\desktop\mle-1\mle_ueb_1\climber.cpp(30): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\philips\desktop\mle-1\mle_ueb_1\climber.cpp(25): warning C4101: 'city1': unreferenced local variable
+c:\users\philips\desktop\mle-1\mle_ueb_1\climber.cpp(26): warning C4101: 'city2': unreferenced local variable
+  Generating Code...
+  MLE_UEB_1.vcxproj -> C:\Users\Philips\Desktop\MLE-1\Debug\MLE_UEB_1.exe
+  MLE_UEB_1.vcxproj -> C:\Users\Philips\Desktop\MLE-1\Debug\MLE_UEB_1.pdb (Full PDB)
