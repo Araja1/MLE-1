@@ -7,7 +7,6 @@ public:
 	Climber();
 	void start();
 	double threshold;
-	double stoppingCriterion;
 	double hypothesis[100];
 	double startingPoint;
 	double lastFitness;

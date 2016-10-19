@@ -6,5 +6,4 @@ int main()
 {
 	Climber c = Climber();
 	c.start();
-	cout << "Bye! :)";
 }

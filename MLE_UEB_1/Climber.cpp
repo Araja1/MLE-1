@@ -3,39 +3,47 @@ using namespace std;
 
 Climber::Climber()
 {
+	cout << "Table: " << endl;
 	for (int i = 0; i < 10; i++) {
 		for (int j = 0; j < 10; j++) {
 			if (i == j)
 				table[i][j] = 0;
 			else
-				table[i][j] = rand() % 101;
+				table[i][j] = rand() % 10;
+			cout << table[i][j] << "|";
 		}
+		cout << endl;
 	}
 	for (int i = 0; i < 100; i++) {
-		hypothesis[i] = i + 1;
+		hypothesis[i] = rand() % 10;
 	}
-	stoppingCriterion = 1000;
-	threshold = 0;
+	threshold = 10;
+	
 }
 
-
-
 double Climber::fitness() {
-	//double length = hypotheses[(int)hypo];
+	//double length = hypotheses[];
 	double city1;
 	double city2;
-	double count = 0;
-	for (int i = 0; i < 9; i++) {
+	double count = 100;
+	for (int i = 0; i < 8; i++) {
 		int city1 = hypothesis[i];
-		int city2 = hypothesis[i + 1];
-		count += table[city1][city2];
+		int city2 = hypothesis[i+1];
+		if (count > table[city1][city2]) {
+			count = table[city1][city2];
+		}
 	}
-	cout << count;
+	
+	cout << endl << "Wert: " << count;
 	return count;
 }
 
 void Climber::start() {
-	lastFitness = fitness();
+	int x1 = 0;
+	while (x1 < threshold) {
+		lastFitness = fitness();
+		x1++;
+	} 
 }
 
 /*threshold is stopping criterion
